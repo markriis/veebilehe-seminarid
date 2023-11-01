@@ -7,11 +7,15 @@ body {
 
     background: darkgray;
 
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     gap: 1rem;
+    justify-content: space-around; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr /* repeat( 2, 1fr ) */;
+
     padding: 0 16px;
-    justify-content: space-around;
 
     max-height: 100qrvh;
 }
@@ -74,6 +78,9 @@ table, td {
 .vaga-age-link {
     animation: keerle infinite 10s linear;
     transition: scale 200ms 200ms ease-out;
+
+    width: fit-content;
+    height: fit-content;
 }
 
 .vaga-age-link:hover {
