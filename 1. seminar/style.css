@@ -1,0 +1,51 @@
+body {
+    color: cadetblue;
+    font-family: Impact;
+    font-size: 16px;
+
+    text-align: center;
+
+    background: darkgray;
+
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0 16px;
+    justify-content: space-around;
+
+    max-height: 100qrvh;
+}
+
+body div {
+    height: 100%;
+}
+
+
+.pealkiri {
+    color: #8080FD;
+    font-family: 'Segoe UI';
+    font-size: 32px /* 2rem */;
+
+    text-align: left;
+}
+
+img {
+    border: 10px black dashed;
+
+    box-shadow: 0 0 20px 10px #8080FD;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+thead tr {
+    font-weight: bold;
+    font-size: 32px;
+    color: coral;
+    background: linear-gradient( 90deg, black, white );
+    font-family: 'Times New Roman';
+    text-decoration: underline;
+}
+
+table, td {
+    border: 1px solid black;
+}
