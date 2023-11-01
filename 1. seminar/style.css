@@ -27,6 +27,12 @@ body div {
     font-size: 32px /* 2rem */;
 
     text-align: left;
+
+    transition: transform 2000ms ease-in;
+}
+
+.pealkiri:hover {
+    transform: rotateZ( 360deg ) rotateX( 360deg );
 }
 
 img {
@@ -35,6 +41,12 @@ img {
     box-shadow: 0 0 20px 10px #8080FD;
     width: 50%;
     box-sizing: border-box;
+
+    transition: scale cubic-bezier(0,1.94,1,1.94) 2s;
+}
+
+img:hover {
+    scale: 2;
 }
 
 thead tr {
@@ -48,4 +60,22 @@ thead tr {
 
 table, td {
     border: 1px solid black;
+}
+
+@keyframes keerle {
+    from {
+        transform: rotateZ( 0deg ) rotateY( 0deg );
+    } 
+    to {
+        transform: rotateZ( 360deg ) rotateY( 720deg );
+    }
+}
+
+.vaga-age-link {
+    animation: keerle infinite 10s linear;
+    transition: scale 200ms 200ms ease-out;
+}
+
+.vaga-age-link:hover {
+    scale: 2;
 }
